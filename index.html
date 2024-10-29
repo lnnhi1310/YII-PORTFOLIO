@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	    <title>BE DREAMER</title>
+	    <title>PORTFOLIO</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 	    <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -254,6 +254,20 @@
                 <b>© Copyrighted from owner - Ly Ngoc Nhi</b>
             </footer>
         </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let behindCloud = document.getElementById('behindCloud');
+            let girl = document.getElementById('girl');
+            let headText = document.getElementById('headText');
 
+            window.addEventListener('scroll', function()
+            {
+                let value = window.scrollY;
+                girl.style.top = value * 0.3 + "px";
+                girl.style.left = value * 0.15 + "px";
+                headText.style.top = 150 + value * 0.4 + "px";
+            });
+        
+        </script>
     </body>
 </html>
